@@ -1,11 +1,8 @@
-# Use a specific Node.js version
+# Use a specific Node.js version with Yarn pre-installed
 FROM node:16
 
 # Set working directory
 WORKDIR /app
-
-# Install Yarn globally
-RUN npm install -g yarn
 
 # Copy project files into the container
 COPY . /app
